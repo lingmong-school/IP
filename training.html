@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>NAF Fitness</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"> <!-- Add an anchor tag around the image with the href pointing to your home page -->
+            <img src="NAF.png" alt="NAF" width="50" height="50">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link">Equipment</a></li>
+                <li><a href="supps.html" class="nav-link">Supplements</a></li>
+                <li><a href="apparel.html" class="nav-link">Apparel</a></li>
+                <li><a href="training.html" class="nav-link">Training</a></li>
+                <li><a href="NAF.html" class="nav-link">NAFCR8S</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="divider"></div>
+
+    <h1>JOIN THE NAFAM NOW!</h1>
+
+    <section class="main-content">
+
+        <div class="content-container">
+            <div class="gif-section">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+         <dotlottie-player src="https://lottie.host/e08cd03d-e93d-465d-9cd2-a9d4e74d994a/HsoPSAl2As.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            </div>
+
+        <h2>Request Training</h2>
+        <form id="contactForm">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="email" required>
+
+            <label for="contact-msg">Message:</label>
+            <textarea id="contact-msg" name="message" rows="4" required></textarea>
+
+            <input type="submit" id = "contact-submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NAF Fitness LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="api.js" defer></script>
+</body>
+</html>

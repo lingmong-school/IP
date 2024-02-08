@@ -1,0 +1,240 @@
+body {
+    font-family: 'Aldrich', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040404;
+}
+
+header {
+    font-family: 'Aldrich', sans-serif;
+    background-color: #040404;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.nav-link:hover {
+    color: #7607C6;
+    font-size: 110%;
+}
+
+.divider {
+    height: 3px;
+    background-color: #7607C6;
+    margin: 5px 0; 
+}
+
+.main-image {
+    text-align: center;
+}
+
+.main-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    min-height: 100vh; /* Ensure the content takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.items-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Adding drop shadow */
+    transition: box-shadow 0.3s; /* Adding transition for a smooth effect */
+}
+
+.item img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increasing the shadow on hover */
+}
+
+
+
+button {
+    font-family: 'Aldrich', sans-serif;
+    background-color: #7607C6;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Adding transition for a smooth effect */
+}
+
+button:hover {
+    background-color: #4A036D;
+    transform: scale(1.1); /* Increasing the size on hover */
+
+}
+
+h1 {
+    font-family: 'Aldrich', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 42px;
+}
+
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form {
+    flex: 2;
+    max-width: 600px; /* Increase the maximum width of the form */
+    margin: 0 auto;
+}
+
+.gif-section {
+    flex: 1;
+    margin-left: 100px; /* Adjust the spacing between the form and GIF */
+}
+
+.gif-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    color: #7607C6;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px; /* Increase padding for better appearance */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-size: 18px; /* Increase font size for better visibility */
+}
+
+input[type="submit"] {
+    font-family: 'Aldrich', sans-serif;
+    background-color: #7607C6;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 20px; /* Increase padding for better button appearance */
+}
+
+input[type="submit"]:hover {
+    font-family: 'Aldrich', sans-serif;
+    background-color: #4A036D;
+}
+
+.wheel-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .wheel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 100%;
+    height: 100%;
+    transform-origin: center center; 
+    transition: transform 3s ease-out;
+  }
+  
+  .wheel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center; /* Ensure the image rotates around its center */
+}
+
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .message-container {
+    font-family: 'Aldrich', sans-serif;
+    background-color: #4A036D;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    color: #7607C6;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom */
+}
